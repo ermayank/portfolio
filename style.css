@@ -3,13 +3,13 @@
         margin: 0px;
         box-sizing: border-box;
     }
-
+    
     html {
         font-size: 62.5%;
         --color-highlight: #ffb400;
         --background-dark: #111111;
     }
-
+    
     .head-list {
         display: flex;
         flex-direction: column;
@@ -22,7 +22,7 @@
         list-style: none;
         margin-right: 2rem;
     }
-
+    
     .icon-box {
         background-color: var(--color-highlight);
         margin: 2rem;
@@ -32,12 +32,11 @@
         width: 5rem;
         position: relative;
     }
-
+    
     .head-list h2 {
         opacity: 0;
     }
-
-
+    
     .icon-box i {
         font-size: 2rem;
         position: absolute;
@@ -45,17 +44,15 @@
         left: 50%;
         transform: translate(-50%, -50%);
     }
-
     /* .icon-box:hover {
         background-color: red;
         width: 10rem;
     } */
-
-
+    
     .head-list a {
         display: block;
     }
-
+    
     .hero {
         padding: 2.8rem;
         min-height: 100vh;
@@ -64,14 +61,14 @@
         background-color: var(--background-dark);
         color: white;
     }
-
+    
     .hero-image {
         flex: 1 1 20rem;
         border-radius: 20px;
         z-index: 2;
     }
-
-    .hero-mayank {
+    
+    .hero-mayank-image {
         background-size: cover;
         background-repeat: no-repeat;
         background-position: top;
@@ -80,9 +77,8 @@
         left: 30px;
         top: 30px;
         box-shadow: 0 0 7px rgba(0, 0, 0, .9);
-
     }
-
+    
     .hero-content {
         flex: 3 1 20rem;
         display: flex;
@@ -94,44 +90,52 @@
         line-height: 6rem;
         font-family: 'Poppins', sans-serif;
     }
-
+    
     .hero-content h6 {
         font-size: 2.6rem;
         text-transform: uppercase;
         font-weight: lighter;
     }
-
+    
     .hero-content h1 {
         font-size: 4.6rem;
         text-transform: uppercase;
         font-family: sans-serif;
         color: var(--color-highlight);
+        letter-spacing: 0.4rem;
     }
-
+    
     .hero-content span {
         color: white;
     }
-
+    
     .hero-content p {
         font-size: 1.8rem;
         line-height: 3.2rem;
-        width: 70%;
+        width: 100%;
+        margin-right: 30%;
+        padding: 2rem 0rem;
     }
-
+    
     .hero-content button {
         background-color: var(--color-highlight);
         border-radius: 3rem;
-
         padding: 1.6rem 1rem;
         width: 20rem;
-        border: hidden;
+        border: 3px solid transparent;
         font-size: 1.6rem;
-        margin-top: 2rem;
+        margin: 2rem;
         cursor: pointer;
         font-weight: bolder;
         text-transform: uppercase;
     }
-
+    
+    .hero-content button:hover {
+        border: rgba(133, 16, 16, 0.767) solid 3px;
+        overflow: hidden;
+        transition: all 0.4s ease;
+    }
+    
     .color-block {
         background-color: var(--color-highlight);
         position: fixed;
