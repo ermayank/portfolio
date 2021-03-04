@@ -10,6 +10,10 @@ html {
   font-size: 62.5%;
 }
 
+.active {
+  background-color: #ffb400 !important;
+}
+
 .color-block {
   background-color: #ffb400;
   position: fixed;
@@ -47,12 +51,12 @@ html {
 }
 
 .icon-box {
-  background-color: #ffb400;
+  background-color: #343a40;
   margin: 2rem;
   display: block;
   border-radius: 30px;
-  height: 6rem;
-  width: 6rem;
+  height: 5rem;
+  width: 5rem;
   position: relative;
   cursor: pointer;
   z-index: 2;
@@ -65,30 +69,36 @@ html {
   right: 50%;
   -webkit-transform: translate(50%, -50%);
           transform: translate(50%, -50%);
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
 }
 
 .icon-box:hover {
-  width: 120%;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-  -webkit-transform: translate(-50%, 0%);
-          transform: translate(-50%, 0%);
+  border-radius: 0 10rem 10rem 0;
+  background-color: #ffb400;
 }
 
-.icon-box:hover:after {
-  content: attr(data-hover);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  font-size: 2rem;
+.icon-box:hover .link-text {
+  opacity: 1;
+}
+
+.icon-box h2 {
+  opacity: 0;
   background-color: #ffb400;
+  color: white;
+  position: absolute;
+  right: 100%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  text-transform: uppercase;
+  height: 5rem;
+  padding: 1rem;
+  padding-left: 2rem;
+  text-align: center;
+  font-size: 2rem;
+  border-radius: 10rem 0 0 10rem;
+  font-family: 'Poppins', sans-serif, verdana;
 }
 
 .hero {
@@ -141,7 +151,7 @@ html {
       -ms-flex-pack: center;
           justify-content: center;
   margin-left: 10%;
-  margin-right: 10%;
+  margin-right: 20%;
   line-height: 6rem;
   font-family: 'Poppins', sans-serif, verdana;
 }
@@ -157,7 +167,7 @@ html {
 }
 
 .hero-content h1 {
-  font-size: 4.6rem;
+  font-size: 4rem;
   text-transform: uppercase;
   font-family: sans-serif;
   color: #ffb400;
@@ -165,7 +175,7 @@ html {
 }
 
 .hero-content p {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   line-height: 3.2rem;
   width: 100%;
   margin-right: 30%;

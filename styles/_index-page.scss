@@ -29,12 +29,12 @@
 }
 
 .icon-box {
-    background-color: $color-highlight;
+    background-color: $dark-color;
     margin: 2rem;
     display: block;
     border-radius: 30px;
-    height: 6rem;
-    width: 6rem;
+    height: 5rem;
+    width: 5rem;
     position: relative;
     cursor: pointer;
     z-index: 2;
@@ -45,23 +45,36 @@
         top: 50%;
         right: 50%;
         transform: translate(50%, -50%);
+        transition: all 1s ease;
     }
+
 
     &:hover {
-        width: 120%;
-        transition: all 0.5s ease-in-out;
-        transform: translate(-50%, 0%);
+        border-radius: 0 10rem 10rem 0;
+        background-color: $color-highlight;
 
-        &:after {
-            content: attr(data-hover);
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-start;
-            font-size: 2rem;
-            background-color: $color-highlight;
-
+        .link-text {
+            opacity: 1;
         }
     }
+}
+
+.icon-box h2 {
+    opacity: 0;
+    background-color: $color-highlight;
+    color: white;
+    position: absolute;
+    right: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    text-transform: uppercase;
+    height: 5rem;
+    padding: 1rem;
+    padding-left: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    border-radius: 10rem 0 0 10rem;
+    font-family: 'Poppins', sans-serif, verdana;
 }
 
 //Main Section
@@ -98,7 +111,7 @@
     align-items: left;
     justify-content: center;
     margin-left: 10%;
-    margin-right: 10%;
+    margin-right: 20%;
     line-height: 6rem;
     font-family: 'Poppins', sans-serif, verdana;
 
