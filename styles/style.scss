@@ -25,6 +25,10 @@ html {
     background-color: $color-highlight !important;
 }
 
+.active-nav {
+    color: $color-highlight !important;
+}
+
 @import "index-page";
 // /* Extra small devices (phones, 600px and down) */
 // @media only screen and (max-width: 600px) {}
@@ -33,7 +37,68 @@ html {
 // /* Medium devices (landscape tablets, 768px and up) */
 // @media only screen and (min-width: 768px) {}
 // /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1033px) {
+    //Hamburger
+    .line {
+        width: 30px;
+        height: 3px;
+        background-color: white;
+        margin: 5px;
+    }
+    .hamburger {
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 5%;
+        z-index: 2;
+        background-color: $dark-color;
+        padding: 1rem;
+        border-radius: 1rem;
+        z-index: 4;
+    }
+    .nav-links {
+        padding-top: 3rem;
+        position: fixed;
+        background-color: $dark-color;
+        height: 100vh;
+        width: 100%;
+        z-index: 3;
+        clip-path: circle(100px at 90% -20%);
+        -webkit-clip-path: circle(100px at 90% -20%);
+        transition: all 1s ease-out;
+        pointer-events: none;
+    }
+    .nav-links.open {
+        clip-path: circle(1500px at 90% -10%);
+        -webkit-clip-path: circle(1500px at 90% -10%);
+        pointer-events: all;
+    }
+    .nav-links-ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        list-style: none;
+        margin: 2rem;
+        padding: 1rem;
+        transition: all 1s ease-out;
+    }
+    .nav-links-ul a {
+        padding: 2rem;
+        width: 80%;
+        text-decoration: none;
+        color: white;
+        font-size: 2rem;
+        font-family: 'Poppins';
+        border-bottom: 1px solid $light-color;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+        i {
+            margin: 0 1rem;
+        }
+    }
     .hero {
         flex-direction: column;
         justify-content: cenetr;

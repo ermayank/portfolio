@@ -14,6 +14,10 @@ html {
   background-color: #ffb400 !important;
 }
 
+.active-nav {
+  color: #ffb400 !important;
+}
+
 .color-block {
   background-color: #ffb400;
   position: fixed;
@@ -211,7 +215,82 @@ html {
   display: block;
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1033px) {
+  .line {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+  }
+  .hamburger {
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 5%;
+    z-index: 2;
+    background-color: #343a40;
+    padding: 1rem;
+    border-radius: 1rem;
+    z-index: 4;
+  }
+  .nav-links {
+    padding-top: 3rem;
+    position: fixed;
+    background-color: #343a40;
+    height: 100vh;
+    width: 100%;
+    z-index: 3;
+    clip-path: circle(100px at 90% -20%);
+    -webkit-clip-path: circle(100px at 90% -20%);
+    -webkit-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+    pointer-events: none;
+  }
+  .nav-links.open {
+    clip-path: circle(1500px at 90% -10%);
+    -webkit-clip-path: circle(1500px at 90% -10%);
+    pointer-events: all;
+  }
+  .nav-links-ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    list-style: none;
+    margin: 2rem;
+    padding: 1rem;
+    -webkit-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+  }
+  .nav-links-ul a {
+    padding: 2rem;
+    width: 80%;
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    font-family: 'Poppins';
+    border-bottom: 1px solid #f8f9fa;
+    text-transform: uppercase;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-weight: bold;
+  }
+  .nav-links-ul a i {
+    margin: 0 1rem;
+  }
   .hero {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
