@@ -69,17 +69,19 @@ html {
   right: 50%;
   -webkit-transform: translate(50%, -50%);
           transform: translate(50%, -50%);
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
 }
 
 .icon-box:hover {
   border-radius: 0 10rem 10rem 0;
   background-color: #ffb400;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .icon-box:hover .link-text {
   opacity: 1;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 .icon-box h2 {
@@ -115,8 +117,8 @@ html {
 
 .hero-image {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 50rem;
-          flex: 1 1 50rem;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
   border-radius: 20px;
   z-index: 2;
 }
@@ -135,9 +137,9 @@ html {
 }
 
 .hero-content {
-  -webkit-box-flex: 3;
-      -ms-flex: 3 1 20rem;
-          flex: 3 1 20rem;
+  -webkit-box-flex: 2;
+      -ms-flex: 2 1 20rem;
+          flex: 2 1 20rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -153,7 +155,7 @@ html {
           justify-content: center;
   margin-left: 10%;
   margin-right: 20%;
-  line-height: 6rem;
+  line-height: 5rem;
   font-family: 'Poppins', sans-serif, verdana;
 }
 
@@ -172,7 +174,7 @@ html {
   text-transform: uppercase;
   font-family: sans-serif;
   color: #ffb400;
-  letter-spacing: 0.4rem;
+  letter-spacing: 0.2rem;
 }
 
 .hero-content p {
@@ -185,6 +187,7 @@ html {
 
 .index-button {
   background-color: #ffb400;
+  color: #343a40;
   border-radius: 3rem;
   border: none;
   padding: 1.6rem 1rem;
@@ -198,13 +201,69 @@ html {
 
 .index-button:hover {
   overflow: hidden;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-  -webkit-box-shadow: 0px 2px 8px white;
-          box-shadow: 0px 2px 8px white;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-box-shadow: 0px 2px 8px rgba(194, 185, 185, 0.26);
+          box-shadow: 0px 2px 8px rgba(194, 185, 185, 0.26);
 }
 
 .head-list a {
   display: block;
+}
+
+@media only screen and (max-width: 992px) {
+  .hero {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: cenetr;
+        -ms-flex-pack: cenetr;
+            justify-content: cenetr;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+  .hero-mayank-image {
+    border-radius: 50%;
+    width: 30rem;
+    height: 30rem;
+    border: 4px solid #252525;
+    margin: 0;
+    margin-top: 5rem;
+  }
+  .color-block {
+    display: none;
+    margin: 0;
+    padding: 0;
+  }
+  .hero-image {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 20rem;
+            flex: 1 1 20rem;
+    padding: 0;
+    margin: 0;
+  }
+  .header {
+    display: none;
+  }
+  .hero-content {
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0;
+    padding: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .hero-content p {
+    margin: 1rem 0 2.3rem;
+    padding: 0 2rem;
+    font-size: 160%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

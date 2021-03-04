@@ -1,11 +1,16 @@
 /* Global variables*/
+
 $color-highlight: #ffb400;
 $background-dark: #111111;
 $index-heading: 4rem;
 $index-p: 1.5rem;
 $light-color: #f8f9fa;
 $dark-color:#343a40;
-
+$breakpoint-sm: 576px;
+$breakpoint-xs: 0;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
 * {
     margin: 0;
     padding: 0;
@@ -21,19 +26,55 @@ html {
 }
 
 @import "index-page";
-
 // /* Extra small devices (phones, 600px and down) */
-
 // @media only screen and (max-width: 600px) {}
-
 // /* Small devices (portrait tablets and large phones, 600px and up) */
 // @media only screen and (min-width: 600px) {}
-
 // /* Medium devices (landscape tablets, 768px and up) */
 // @media only screen and (min-width: 768px) {}
-
 // /* Large devices (laptops/desktops, 992px and up) */
-// @media only screen and (min-width: 992px) {}
+@media only screen and (max-width: 992px) {
+    .hero {
+        flex-direction: column;
+        justify-content: cenetr;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+    .hero-mayank-image {
+        border-radius: 50%;
+        width: 30rem;
+        height: 30rem;
+        border: 4px solid #252525;
+        margin: 0;
+        margin-top: 5rem;
+    }
+    .color-block {
+        display: none;
+        margin: 0;
+        padding: 0;
+    }
+    .hero-image {
+        flex: 1 1 20rem;
+        padding: 0;
+        margin: 0;
+    }
+    .header {
+        display: none;
+    }
+    .hero-content {
+        text-align: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+        p {
+            margin: 1rem 0 2.3rem;
+            padding: 0 2rem;
+            font-size: 160%;
+        }
+    }
+}
 
 // /* Extra large devices (large laptops and desktops, 1200px and up) */
 // @media only screen and (min-width: 1200px) {}
