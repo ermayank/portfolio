@@ -51,18 +51,44 @@ html {
   margin: 2rem;
   display: block;
   border-radius: 30px;
-  height: 5rem;
-  width: 5rem;
+  height: 6rem;
+  width: 6rem;
   position: relative;
+  cursor: pointer;
+  z-index: 2;
 }
 
 .icon-box i {
   font-size: 2rem;
   position: absolute;
   top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  right: 50%;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+}
+
+.icon-box:hover {
+  width: 120%;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
+}
+
+.icon-box:hover:after {
+  content: attr(data-hover);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  font-size: 2rem;
+  background-color: #ffb400;
 }
 
 .hero {
@@ -146,12 +172,12 @@ html {
   padding: 2rem 0rem;
 }
 
-.hero-content button {
+.index-button {
   background-color: #ffb400;
   border-radius: 3rem;
+  border: none;
   padding: 1.6rem 1rem;
   width: 20rem;
-  border: 3px solid transparent;
   font-size: 1.6rem;
   margin: 2rem;
   cursor: pointer;
@@ -159,20 +185,15 @@ html {
   text-transform: uppercase;
 }
 
-.hero-content button:hover {
-  border: rgba(133, 16, 16, 0.767) solid 3px;
+.index-button:hover {
   overflow: hidden;
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-box-shadow: 0px 2px 8px white;
+          box-shadow: 0px 2px 8px white;
 }
 
 .head-list a {
   display: block;
 }
-
-/* Extra small devices (phones, 600px and down) */
-/* Small devices (portrait tablets and large phones, 600px and up) */
-/* Medium devices (landscape tablets, 768px and up) */
-/* Large devices (laptops/desktops, 992px and up) */
-/* Extra large devices (large laptops and desktops, 1200px and up) */
 /*# sourceMappingURL=style.css.map */

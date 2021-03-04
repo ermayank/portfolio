@@ -33,16 +33,34 @@
     margin: 2rem;
     display: block;
     border-radius: 30px;
-    height: 5rem;
-    width: 5rem;
+    height: 6rem;
+    width: 6rem;
     position: relative;
+    cursor: pointer;
+    z-index: 2;
 
     i {
         font-size: 2rem;
         position: absolute;
         top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        right: 50%;
+        transform: translate(50%, -50%);
+    }
+
+    &:hover {
+        width: 120%;
+        transition: all 0.5s ease-in-out;
+        transform: translate(-50%, 0%);
+
+        &:after {
+            content: attr(data-hover);
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            font-size: 2rem;
+            background-color: $color-highlight;
+
+        }
     }
 }
 
@@ -109,26 +127,27 @@
         margin-right: 30%;
         padding: 2rem 0rem;
     }
+}
 
-    button {
-        background-color: $color-highlight;
-        border-radius: 3rem;
-        padding: 1.6rem 1rem;
-        width: 20rem;
-        border: 3px solid transparent;
-        font-size: 1.6rem;
-        margin: 2rem;
-        cursor: pointer;
-        font-weight: bolder;
-        text-transform: uppercase;
+.index-button {
+    background-color: $color-highlight;
+    border-radius: 3rem;
+    border: none;
+    padding: 1.6rem 1rem;
+    width: 20rem;
+    font-size: 1.6rem;
+    margin: 2rem;
+    cursor: pointer;
+    font-weight: bolder;
+    text-transform: uppercase;
 
-        &:hover {
-            border: rgba(133, 16, 16, 0.767) solid 3px;
-            overflow: hidden;
-            transition: all 0.4s ease;
-        }
+    &:hover {
+        overflow: hidden;
+        transition: all 0.5s ease-in-out;
+        box-shadow: 0px 2px 8px white;
     }
 }
+
 
 .head-list a {
     display: block;
