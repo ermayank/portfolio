@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mayank Gupta</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+
 
     <link rel="stylesheet" href="../../styles/style.css">
     <script src="https://use.fontawesome.com/f0316fdebf.js"></script>
@@ -15,60 +16,123 @@
 
 <body>
 
-        <!-- Mobile Menu -->
-        <div class="hamburger">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </div>
-        <div class="nav-links">
-            <ul class="nav-links-ul">
-                <a href="#" class="active-nav">
-                    <i class="fa fa-home"></i>
-                    <li>Home</li>
-                </a>
-                <a href="#">
-                    <i class="fa fa-user"></i>
-                    <li>About</li>
-                </a>
-                <a href="#">
-                    <i class="fa fa-briefcase"></i>
-                    <li>Portfolio</li>
-                </a>
-                <a href="#">
-                    <i class="fa fa-envelope-open"></i>
-                    <li>Contact</li>
-                </a>
-            </ul>
-        </div>
-<!-- Mobile Menu Ends-->
+    <!-- Mobile Menu -->
 
-<!-- Side Menu -->
-        <header class="header">
-            <ul class="head-list">
-                <li class="active icon-box" data-hover="Home">
-                    <i class="fa fa-home"></i>
-                    <a href="#" class="nav-link">
-                        <h2 class="link-text">Home</h2>
-                    </a>
-                </li>
-                <li class="icon-box" data-hover="About">
-                    <i class="fa fa-user"></i>
-                    <h2 class="link-text">About</h2>
-                </li>
-                <li class="icon-box" data-hover="Portfolio">
-                    <i class="fa fa-briefcase"></i>
-                    <h2 class="link-text">Portfolio</h2>
-                </li>
-                <li class="icon-box" data-hover="Contact">
-                    <i class="fa fa-envelope-open"></i>
-                    <h2 class="link-text">Contact</h2>
-                </li>
+    <div class="nav-links">
+        <ul class="nav-links-ul">
+            <a href="#" class="active-nav">
+                <i class="fa fa-home"></i>
+                <li>Home</li>
+            </a>
+            <a href="#">
+                <i class="fa fa-user"></i>
+                <li>About</li>
+            </a>
+            <a href="#">
+                <i class="fa fa-briefcase"></i>
+                <li>Portfolio</li>
+            </a>
+            <a href="#">
+                <i class="fa fa-envelope-open"></i>
+                <li>Contact</li>
+            </a>
+        </ul>
+    </div>
+    <!-- Mobile Menu Ends-->
+
+    <!-- Side Menu -->
+    <header class="header">
+        <ul class="head-list">
+            <li class="active icon-box" data-hover="Home">
+                <i class="fa fa-home"></i>
+                <a href="#" class="nav-link">
+                    <h2 class="link-text">Home</h2>
+                </a>
+            </li>
+            <li class="icon-box" data-hover="About">
+                <i class="fa fa-user"></i>
+                <h2 class="link-text">About</h2>
+            </li>
+            <li class="icon-box" data-hover="Portfolio">
+                <i class="fa fa-briefcase"></i>
+                <h2 class="link-text">Portfolio</h2>
+            </li>
+            <li class="icon-box" data-hover="Contact">
+                <i class="fa fa-envelope-open"></i>
+                <h2 class="link-text">Contact</h2>
+            </li>
+        </ul>
+    </header>
+    <!-- Side Menu Ends-->
+
+    <!-- Main Body Section -->
+    <Section class="heading-section">
+        <div class="hamburger-other">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <div class="big-heading">
+            Contact
+        </div>
+        <div class="small-heading">
+            Get in <span> touch </span>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="contact-content">
+            <h3> Don't Be Shy !</h3>
+            <p class="intro">Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or opportunities to be part of your visions.</p>
+
+            <div class="custom-span-contact">
+                <i class="fa fa-envelope-open"></i>
+                <div class="mail">
+                    Mail me <br>mayank.pkgupta@gmail.com
+                </div>
+            </div>
+            <div class="custom-span-contact">
+                <i class="fa fa-phone-square"></i>
+                <div class="mail">
+                    Call me <br>(+91) - 9468182031
+                </div>
+            </div>
+            <ul class="social-list">
+                <a href="#">
+                    <li><i class="fa fa-linkedin"></i></li>
+                </a>
+                <a href="#">
+                    <li><i class="fa fa-github"></i></li>
+                </a>
+                <a href="#">
+                    <li><i class="fa fa-instagram"></i></li>
+                </a>
+                <a href="#">
+                    <li><i class="fa fa-facebook"></i></li>
+                </a>
+                <a href="#">
+                    <li><i class="fa fa-twitter"></i></li>
+                </a>
             </ul>
-        </header>
-        <!-- Side Menu Ends-->
-        
-    <script src="./js/app.js"></script>
+        </div>
+
+        <div class="contact">
+            <form class="contact-form">
+                <div class="inputs">
+                    <input type="text" placeholder="YOUR EMAIL">
+                    <input type="text" placeholder="YOUR NAME">
+                    <input type="text" placeholder="YOUR SUBJECT">
+                </div>
+
+                <textarea name="form-body" id="" cols="30" rows="10" placeholder="YOUR MESSAGE"></textarea>
+                <button class="index-button">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Main Section Ends -->
+    <script src="../../js/appOther.js"></script>
 </body>
 
 </html>

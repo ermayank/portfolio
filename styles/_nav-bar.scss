@@ -1,0 +1,70 @@
+//Navigation List
+.head-list h2 {
+    opacity: 0;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+}
+
+.head-list {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    height: 100%;
+    justify-content: center;
+    position: fixed;
+    right: 20px;
+    top: 5px;
+    list-style: none;
+    margin-right: 2rem;
+}
+
+.icon-box {
+    background-color: $dark-color;
+    margin: 2rem;
+    display: block;
+    border-radius: 30px;
+    height: 5rem;
+    width: 5rem;
+    position: relative;
+    cursor: pointer;
+    z-index: 2;
+    i {
+        font-size: 2rem;
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        transform: translate(50%, -50%);
+    }
+    &:hover {
+        border-radius: 0 10rem 10rem 0;
+        background-color: $color-highlight;
+        transition: all 0.3s ease;
+        .link-text {
+            opacity: 1;
+            transition: all 0.4s;
+        }
+    }
+}
+
+.icon-box h2 {
+    opacity: 0;
+    background-color: $color-highlight;
+    color: white;
+    position: absolute;
+    right: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    text-transform: uppercase;
+    height: 5rem;
+    padding: 1rem;
+    padding-left: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    border-radius: 10rem 0 0 10rem;
+    font-family: 'Poppins', sans-serif, verdana;
+}
+
+//Mobile responsive
