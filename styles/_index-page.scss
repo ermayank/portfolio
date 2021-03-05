@@ -15,6 +15,11 @@
     opacity: 0;
 }
 
+.nav-link {
+    text-decoration: none;
+    color: white;
+}
+
 .head-list {
     display: flex;
     flex-direction: column;
@@ -38,6 +43,7 @@
     position: relative;
     cursor: pointer;
     z-index: 2;
+
     i {
         font-size: 2rem;
         position: absolute;
@@ -45,10 +51,12 @@
         right: 50%;
         transform: translate(50%, -50%);
     }
+
     &:hover {
         border-radius: 0 10rem 10rem 0;
         background-color: $color-highlight;
         transition: all 0.3s ease;
+
         .link-text {
             opacity: 1;
             transition: all 0.4s;
@@ -80,8 +88,7 @@
     min-height: 100vh;
     display: flex;
     flex-wrap: wrap;
-    background-color: $background-dark;
-    color: white;
+
 }
 
 .hero-image {
@@ -112,14 +119,17 @@
     margin-right: 20%;
     line-height: 5rem;
     font-family: 'Poppins', sans-serif, verdana;
+
     span {
         color: white;
     }
+
     h6 {
         font-size: 2.6rem;
         text-transform: uppercase;
         font-weight: lighter;
     }
+
     h1 {
         font-size: $index-heading;
         text-transform: uppercase;
@@ -127,6 +137,7 @@
         color: $color-highlight;
         letter-spacing: 0.2rem;
     }
+
     p {
         font-size: $index-p;
         line-height: 3.2rem;
@@ -148,6 +159,7 @@
     cursor: pointer;
     font-weight: bolder;
     text-transform: uppercase;
+
     &:hover {
         overflow: hidden;
         transition: all 0.3s ease-in-out;

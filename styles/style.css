@@ -6,6 +6,11 @@
           box-sizing: border-box;
 }
 
+body {
+  background-color: #111111;
+  color: white;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -32,6 +37,11 @@ html {
 
 .head-list h2 {
   opacity: 0;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
 }
 
 .head-list {
@@ -115,8 +125,6 @@ html {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  background-color: #111111;
-  color: white;
 }
 
 .hero-image {
