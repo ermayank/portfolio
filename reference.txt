@@ -1,0 +1,4 @@
+1. index page sabse alag
+2. navbar baki ki contact ki scss mein
+3. 
+    background-color: #008CBA;
