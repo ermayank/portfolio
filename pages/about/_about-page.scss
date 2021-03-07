@@ -1,0 +1,85 @@
+.section-heading {
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.experience-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-gap: 2rem;
+    margin: auto;
+    width: 80%;
+    justify-items: start;
+    grid-auto-flow: row;
+}
+
+.exp-items {
+    margin: 2rem 0;
+    list-style: none;
+    display: flex;
+}
+
+.icon {
+    //flex: 1 1 5rem;
+    background-color: $color-highlight;
+    height: 4rem;
+    min-width: 4rem;
+    border-radius: 50%;
+    position: relative;
+}
+
+//Line used
+.icon-line {
+    background-color: $light-color;
+    width: 1px;
+    height: 4rem;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+}
+
+.icon i {
+    font-size: 1.5rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.content {
+    margin: 0 1rem;
+    font-size: 1.5rem;
+    //background-color: red;
+    line-height: 2.5rem;
+    .c-1 {
+        font-family: sans-serif;
+        font-weight: bolder;
+        font-size: 1.2rem;
+        background-color: $dark-color;
+        display: inline-block;
+        padding: 0 2rem;
+        margin-bottom: 1rem;
+        border: 2px solid $dark-color;
+        border-radius: 10rem 10rem 10rem 10rem;
+    }
+    .c-2 {
+        font-family: sans-serif;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
+    .c-3 {
+        font-family: 'Roboto', sans-serif;
+    }
+}
+
+//Media Query
+// @media only screen and (max-width: $breakpoint-custom) {
+//     .experience-section {
+//         grid-template-columns: 1fr;
+//     }
+// }

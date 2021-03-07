@@ -1,6 +1,7 @@
 /* Global variables*/
 
 $color-highlight: #ffb400;
+$color-highlight-blue: #008CBA;
 $background-dark: #111111;
 $index-heading: 4rem;
 $index-p: 1.7rem;
@@ -15,7 +16,6 @@ $breakpoint-xl: 1200px;
 $breakpoint-custom: 1033px;
 //Fonts
 @import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Poppins:wght@900&family=Roboto&display=swap');
-
 * {
     margin: 0;
     padding: 0;
@@ -43,10 +43,8 @@ html {
 @import "nav-bar";
 @import "../pages/contact/contact-page";
 @import "../pages/portfolio/portfolio-page";
-
+@import "../pages/about/about-page";
 //Other Pages NAV
-
-
 // /* Extra small devices (phones, 600px and down) */
 // @media only screen and (max-width: 600px) {}
 // /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -55,7 +53,6 @@ html {
 // @media only screen and (min-width: 768px) {}
 // /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (max-width: $breakpoint-custom) {
-
     //Navbar Start
     //Hamburger
     .line {
@@ -64,7 +61,6 @@ html {
         background-color: white;
         margin: 5px;
     }
-
     .hamburger {
         position: absolute;
         cursor: pointer;
@@ -76,7 +72,6 @@ html {
         border-radius: 1rem;
         z-index: 4;
     }
-
     .nav-links {
         padding-top: 3rem;
         position: fixed;
@@ -89,13 +84,11 @@ html {
         transition: all 1s ease-out;
         pointer-events: none;
     }
-
     .nav-links.open {
         clip-path: circle(1500px at 90% -10%);
         -webkit-clip-path: circle(1500px at 90% -10%);
         pointer-events: all;
     }
-
     .nav-links-ul {
         display: flex;
         flex-direction: column;
@@ -106,7 +99,6 @@ html {
         padding: 1rem;
         transition: all 1s ease-out;
     }
-
     .nav-links-ul a {
         padding: 2rem;
         width: 80%;
@@ -119,12 +111,10 @@ html {
         display: flex;
         align-items: center;
         font-weight: bold;
-
         i {
             margin: 0 1rem;
         }
     }
-
     //Navbar End
     .hero {
         flex-direction: column;
@@ -133,7 +123,6 @@ html {
         padding: 0;
         margin: 0;
     }
-
     .hero-mayank-image {
         border-radius: 50%;
         width: 30rem;
@@ -142,30 +131,25 @@ html {
         margin: 0;
         margin-top: 5rem;
     }
-
     .color-block {
         display: none;
         margin: 0;
         padding: 0;
     }
-
     .hero-image {
         flex: 1 1 20rem;
         padding: 0;
         margin: 0;
     }
-
     .header {
         display: none;
     }
-
     .hero-content {
         text-align: center;
         justify-content: center;
         margin: 0;
         padding: 0;
         align-items: center;
-
         p {
             margin: 1rem 0 2.3rem;
             padding: 0 2rem;
