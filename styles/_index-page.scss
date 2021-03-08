@@ -46,14 +46,17 @@
     margin-right: 20%;
     line-height: 5rem;
     font-family: 'Poppins', sans-serif, verdana;
+
     span {
         color: white;
     }
+
     h6 {
         font-size: 2.6rem;
         text-transform: uppercase;
         font-weight: lighter;
     }
+
     h1 {
         font-size: $index-heading;
         text-transform: uppercase;
@@ -61,6 +64,7 @@
         color: $color-highlight;
         letter-spacing: 0.2rem;
     }
+
     p {
         font-size: $index-p;
         font-family: sans-serif;
@@ -83,6 +87,7 @@
     cursor: pointer;
     font-weight: bolder;
     text-transform: uppercase;
+
     &:hover {
         overflow: hidden;
         transition: all 0.3s ease-in-out;

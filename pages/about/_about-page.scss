@@ -5,13 +5,16 @@
     font-size: 2.5rem;
     text-align: center;
     margin: 2rem 0;
+
 }
 
-.experience-section {
+.experience-section,
+.skill-section,
+.personal-info {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     grid-gap: 2rem;
-    margin: auto;
+    margin: 3rem auto;
     width: 80%;
     justify-items: start;
     grid-auto-flow: row;
@@ -55,6 +58,7 @@
     font-size: 1.5rem;
     //background-color: red;
     line-height: 2.5rem;
+
     .c-1 {
         font-family: sans-serif;
         font-weight: bolder;
@@ -66,20 +70,117 @@
         border: 2px solid $dark-color;
         border-radius: 10rem 10rem 10rem 10rem;
     }
+
     .c-2 {
         font-family: sans-serif;
         text-transform: uppercase;
         font-weight: bold;
         margin-bottom: 1rem;
     }
+
     .c-3 {
         font-family: 'Roboto', sans-serif;
     }
 }
 
+
+.col-1,
+.col-2 {
+    width: 100%;
+}
+
+.skill-items {
+    list-style: none;
+    margin-bottom: 5rem;
+
+}
+
+.meter {
+    height: 2rem;
+    background: $dark-color;
+    border-radius: 25px;
+    padding: 10px;
+    width: 90%;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    position: relative;
+
+    p {
+        color: white;
+        font-family: sans-serif;
+        text-transform: uppercase;
+        font-weight: bolder;
+        padding: 1rem 0;
+        font-size: 1.5rem;
+        width: 100%;
+        position: absolute;
+        top: -200%;
+    }
+
+    span {
+        background-color: $color-highlight;
+        height: 2rem;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        border-radius: 25px;
+    }
+
+}
+
+//profile Info
+
+.info,
+.stats {
+    //background-color: aqua;
+    width: 90%;
+    margin: auto;
+    font-size: 1.7rem;
+
+}
+
+.stats {
+    text-align: center;
+
+    img {
+        width: 40rem;
+        height: 40rem;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 50%;
+        box-shadow: 0 0 7px rgba(0, 0, 0, .9);
+    }
+}
+
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 2rem;
+}
+
+.column-1,
+.column-2 {
+    flex: 1 1;
+    font-family: verdana, sans-serif;
+
+    li {
+        list-style: none;
+        padding: 1rem 0;
+        margin-right: 2rem;
+    }
+}
+
+.title-value {
+    font-weight: bolder;
+}
+
+
 //Media Query
-// @media only screen and (max-width: $breakpoint-custom) {
-//     .experience-section {
-//         grid-template-columns: 1fr;
-//     }
-// }
+@media only screen and (max-width: $breakpoint-lg) {
+    .stats {
+        img {
+            display: none;
+        }
+    }
+}
