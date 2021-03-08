@@ -122,15 +122,15 @@
         </div>
 
         <div class="contact">
-            <form class="contact-form">
+            <form class="contact-form" action="https://formspree.io/f/mdopqozl" method="POST">
                 <div class="inputs">
-                    <input type="text" placeholder="YOUR EMAIL">
-                    <input type="text" placeholder="YOUR NAME">
-                    <input type="text" placeholder="YOUR SUBJECT">
+                    <input type="email" name="_replyto" placeholder="YOUR EMAIL">
+                    <input type="text" placeholder="YOUR NAME" name="username">
+                    <input type="text" placeholder="YOUR SUBJECT" name="subject">
                 </div>
 
-                <textarea name="form-body" id="" cols="30" rows="10" placeholder="YOUR MESSAGE"></textarea>
-                <button class="index-button">Send Message</button>
+                <textarea name="form-body" id="" cols="30" rows="10" placeholder="YOUR MESSAGE" name="message"></textarea>
+                <button type="submit" class="index-button">Send Message</button>
             </form>
         </div>
     </section>
