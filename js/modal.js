@@ -15,3 +15,10 @@ window.addEventListener('click', (e) => {
         modal.style.display = "none";
       }
 })
+
+// When the user press esc, close it
+document.addEventListener('keydown', (event) => {
+	if(event.key === "Escape"){
+		modal.style.display = "none";
+	}
+});
