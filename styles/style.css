@@ -685,6 +685,9 @@ a {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
+  .modal-content {
+    width: 90%;
+  }
 }
 
 .section-heading {
