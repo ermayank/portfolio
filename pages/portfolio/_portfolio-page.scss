@@ -7,6 +7,22 @@
     transition: all 1s ease;
 }
 
+.portfolio-page-heading {
+    //background-color: coral;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+}
+
+.highlight {
+    color: $color-highlight;
+}
+
 .work-name {
     opacity: 0;
     position: absolute;
@@ -151,7 +167,7 @@
     .portfolio-section {
         width: 80%;
         margin: auto;
-        margin-top: 2rem;
+        margin-top: 1rem;
         padding: 3rem;
         grid-template-columns: 1fr;
     }
