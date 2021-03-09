@@ -22,6 +22,7 @@
     border-radius: 2rem;
     text-align: center;
     text-transform: capitalize;
+
     .text {
         position: absolute;
         top: 50%;
@@ -36,11 +37,13 @@
 
 .work-item {
     position: relative;
+
     &:hover {
         .work-name {
             opacity: 0.6;
         }
     }
+
     img {
         width: 100%;
         align-content: center;
@@ -48,6 +51,101 @@
         border-radius: 2rem;
     }
 }
+
+//Modal Section
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 20rem;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin: auto;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+
+}
+
+/* Modal Content */
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $dark-color;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%;
+    border-radius: 2rem;
+    color: white;
+    border: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+
+    h1 {
+        color: $color-highlight;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 3rem;
+        padding: 2rem 0;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    img {
+        width: 90%;
+        margin: 2rem auto;
+        border-radius: 2rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+        display: block;
+        width: 90%;
+        margin: auto;
+        font-size: large;
+        font-weight: bolder;
+        line-height: 3rem;
+
+        i {
+            padding: 0 1rem;
+        }
+
+        a {
+            color: $color-highlight;
+            text-decoration: underline;
+        }
+
+        span {
+            font-weight: normal;
+        }
+    }
+
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    color: #aaaaaa;
+    //background-color: red;
+    font-size: 5rem;
+    font-weight: bold;
+    padding: 0;
+    top: 0%;
+    right: 5%;
+
+
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 
 @media only screen and (max-width: $breakpoint-custom) {
     .portfolio-section {

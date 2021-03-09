@@ -579,6 +579,103 @@ a {
   border-radius: 2rem;
 }
 
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 20rem;
+  left: 0;
+  top: 0;
+  width: 100%;
+  margin: auto;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal Content */
+.modal-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #252525;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 40%;
+  border-radius: 2rem;
+  color: white;
+  border: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+}
+
+.modal-content h1 {
+  color: #ffb400;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 3rem;
+  padding: 2rem 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.modal-content img {
+  width: 90%;
+  margin: 2rem auto;
+  border-radius: 2rem;
+}
+
+.modal-content p {
+  font-size: 1.5rem;
+  display: block;
+  width: 90%;
+  margin: auto;
+  font-size: large;
+  font-weight: bolder;
+  line-height: 3rem;
+}
+
+.modal-content p i {
+  padding: 0 1rem;
+}
+
+.modal-content p a {
+  color: #ffb400;
+  text-decoration: underline;
+}
+
+.modal-content p span {
+  font-weight: normal;
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  color: #aaaaaa;
+  font-size: 5rem;
+  font-weight: bold;
+  padding: 0;
+  top: 0%;
+  right: 5%;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 @media only screen and (max-width: 1033px) {
   .portfolio-section {
     width: 80%;
